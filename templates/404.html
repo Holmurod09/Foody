@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>404 — Sahifa topilmadi</title>
+  <style>
+    :root{
+      --red:#c81616;
+      --dark:#333;
+      --muted:#777;
+      --bg:#f7f7f7;
+      --maxw:1100px;
+    }
+    html,body{height:100%;margin:0;font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;background:white;color:var(--dark)}
+    .container{max-width:var(--maxw);margin:40px auto;padding:40px 20px}
+
+    /* header like Yummy */
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{font-weight:700;font-size:28px;color:var(--dark)}
+    .brand span{color:var(--red)}
+
+    /* hero */
+    .hero{display:flex;gap:40px;align-items:center;background:var(--bg);padding:60px;border-radius:6px}
+    .hero .left{flex:1}
+    .hero .right{width:420px;flex:0 0 420px;text-align:center}
+
+    .code{font-size:110px;font-weight:800;color:var(--red);line-height:1;margin:0}
+    .title{font-size:32px;margin:10px 0 6px}
+    .desc{color:var(--muted);margin-bottom:22px}
+
+    .actions{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--red);color:#fff;padding:12px 22px;border-radius:28px;text-decoration:none;font-weight:600;box-shadow:0 6px 18px rgba(200,20,20,0.12)}
+    .btn.secondary{background:transparent;color:var(--dark);border:1px solid #eee;padding:10px 18px}
+
+    .plate{width:100%;max-width:420px;border-radius:50%;box-shadow:0 30px 60px rgba(0,0,0,0.08);background:white;padding:14px}
+    .plate img{width:100%;height:auto;border-radius:50%;display:block}
+
+    /* footer note */
+    .note{text-align:center;margin-top:28px;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{flex-direction:column;text-align:center}
+      .hero .right{width:260px;flex-basis:260px}
+      .code{font-size:86px}
+      .title{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <main class="hero" role="main">
+      <div class="left">
+        <h1 class="code">404</h1>
+        <h2 class="title">Sahifa topilmadi</h2>
+        <p class="desc">Kecha topilmadi yoki havola eskirgan. Sahifani yangilab ko'ring yoki bosh sahifaga qayting.</p>
+
+        <div class="actions">
+          <a class="btn" href="/">Bosh sahifaga qaytish</a>
+          <a class="btn secondary" href="javascript:history.back()">Orqaga</a>
+        </div>
+
+      </div>
+
+      <div class="right">
+        <div class="plate">
+          <!-- User-provided hero image: local path used as URL -->
+          <img src="sandbox:/mnt/data/07cb19a2-a703-43ce-acc7-c2b5221b5694.png" alt="Yummy plate">
+        </div>
+      </div>
+    </main>
+
+    <footer style="text-align:center;margin-top:28px;color:var(--muted)">
+    </footer>
+  </div>
+</body>
+</html>
